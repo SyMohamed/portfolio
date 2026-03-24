@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Sy | Blog</title>
+<link rel="icon" type="image/png" href="./image_1.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "bg":               "#050505",
+        "surface":          "#121214",
+        "surface-low":      "#0e0e10",
+        "surface-high":     "#1a1a1c",
+        "primary":          "#800020",
+        "primary-light":    "#A3324B",
+        "primary-dim":      "#5C0015",
+        "on-primary":       "#ffffff",
+        "muted":            "#666666",
+        "border-subtle":    "rgba(73,61,64,0.2)",
+        "text-main":        "#F2F2F2",
+        "text-muted":       "#666666",
+      },
+      fontFamily: {
+        "display": ["Clash Display", "sans-serif"],
+        "body":    ["Switzer", "Plus Jakarta Sans", "sans-serif"],
+        "mono":    ["Space Mono", "monospace"],
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg:      "0.5rem",
+        xl:      "0.75rem",
+        "2xl":   "1.5rem",
+        full:    "9999px",
+      },
+    },
+  },
+}
+</script>
+<style>
+  body { background-color:#050505; color:#F2F2F2; }
+  .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; vertical-align:middle; }
+  .ghost-border { border:1px solid rgba(73,61,64,0.2); }
+  .leaf-radius  { border-radius:0.75rem 1.5rem 0.75rem 0.75rem; }
+  .glow-hover:hover { box-shadow:0 0 20px rgba(128,0,32,0.15); border-color:rgba(128,0,32,0.35); }
+  .cursor::after { content:"|"; animation:blink 0.75s step-end infinite; color:#800020; margin-left:2px; }
+  @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
+  @keyframes float { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-8px); } }
+  .float-anim { animation: float 3s ease-in-out infinite; }
+</style>
+</head>
+<body class="font-body selection:bg-primary selection:text-white">
+
+<!-- ─── HEADER ─── -->
+<header class="fixed top-0 w-full flex justify-between items-center px-4 md:px-8 py-4 bg-[#050505]/85 backdrop-blur-xl border-b border-[rgba(73,61,64,0.2)] z-50">
+  <div class="flex items-center gap-3 md:gap-8">
+    <a class="flex items-center gap-3" href="./Mohamed_Sy_main">
+      <img src="./image_1.png" alt="Logo" class="logo-dark h-10 md:h-12 w-auto">
+      <img src="./image_1.png" alt="Logo" class="logo-light h-10 md:h-12 w-auto hidden">
+      <span class="font-display text-sm font-bold text-white tracking-tight leading-snug">Mohamed<br>Sy</span>
+    </a>
+    <nav class="hidden md:flex gap-6 items-center">
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./Mohamed_Sy_main">Home</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./speaking.html">Speaking</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./research.html">Research</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./experience.html">Experience</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#800020] font-bold border-b border-[#800020] pb-0.5" href="./blog.html">Blog</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./personal.html">Personal</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./gallery.html">Gallery</a>
+    </nav>
+  </div>
+  <div class="flex items-center gap-2 md:gap-3">
+    <button id="bw-toggle" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full ghost-border font-mono text-[10px] uppercase text-[#666666] hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-[15px]">contrast</span>BW
+    </button>
+    <a class="hidden md:inline-flex bg-[#800020] text-white font-mono text-[11px] uppercase tracking-wider px-5 py-2 rounded-lg hover:bg-[#5C0015] hover:shadow-[0_0_20px_rgba(128,0,32,0.3)] transition-all duration-200" href="./contact.html">
+      Get in Touch
+    </a>
+    <button id="hamburger-btn" class="md:hidden flex items-center justify-center w-9 h-9 rounded-full ghost-border text-[#666666] hover:text-white transition-colors flex-shrink-0">
+      <span class="material-symbols-outlined text-[22px]">menu</span>
+    </button>
+  </div>
+</header>
+
+<!-- ─── MAIN CONTENT ─── -->
+<main class="pt-24 pb-28 md:pt-28 md:pb-20 px-4 md:px-6 max-w-7xl mx-auto">
+
+  <!-- Hero Section -->
+  <section class="mb-16">
+    <div class="flex items-center gap-4 mb-6">
+      <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight text-white leading-none">Blog</h1>
+      <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#800020]/15 ghost-border">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
+        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">Latest Draft</span>
+      </span>
+    </div>
+    <p class="text-[#666666] max-w-2xl text-base leading-relaxed font-body">
+      Thoughts on AI, public speaking, research, and everything in between. A space for long-form writing and reflection.
+    </p>
+  </section>
+
+  <!-- Coming Soon Banner -->
+  <section class="mb-16">
+    <div class="bg-[#121214] ghost-border rounded-xl p-10 md:p-16 text-center relative overflow-hidden">
+      <!-- Decorative background elements -->
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-8 left-8 w-32 h-32 border border-[#800020] rounded-full"></div>
+        <div class="absolute bottom-8 right-8 w-48 h-48 border border-[#800020] rounded-full"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-[#800020] rounded-full"></div>
+      </div>
+      <div class="relative z-10">
+        <span class="material-symbols-outlined text-[64px] text-[#800020] mb-6 block float-anim">edit_note</span>
+        <h2 class="font-display text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">Coming Soon</h2>
+        <p class="text-[#666666] max-w-lg mx-auto text-base leading-relaxed mb-6">
+          The blog is currently under development. I'm working on crafting thoughtful articles on technology, research, and personal growth. Stay tuned.
+        </p>
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0e0e10] ghost-border">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
+          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Status: In Development</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder Article Cards -->
+  <section>
+    <div class="flex items-center justify-between mb-8">
+      <h3 class="font-mono text-[11px] text-[#666666] uppercase tracking-widest">Upcoming Articles</h3>
+      <span class="font-mono text-[10px] text-[#444] uppercase tracking-widest">Preview</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="relative group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 opacity-60 blur-[1px] transition-all duration-300">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">AI</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">Mar 2026</span>
+          </div>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">The Future of AI in Everyday Life</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">Exploring how artificial intelligence is quietly reshaping our daily routines, from smart assistants to predictive healthcare, and what lies ahead.</p>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">8 min read</span>
+          </div>
+        </div>
+        <!-- Coming Soon overlay -->
+        <div class="absolute inset-0 flex items-center justify-center rounded-xl bg-[#050505]/40 backdrop-blur-[2px]">
+          <span class="px-4 py-2 rounded-full bg-[#121214] ghost-border font-mono text-[11px] text-[#800020] uppercase tracking-widest">Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="relative group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 opacity-60 blur-[1px] transition-all duration-300">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Speaking</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">Apr 2026</span>
+          </div>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Lessons from Public Speaking</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">What I've learned from years on stage: overcoming nerves, connecting with audiences, and the art of storytelling in professional settings.</p>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">6 min read</span>
+          </div>
+        </div>
+        <!-- Coming Soon overlay -->
+        <div class="absolute inset-0 flex items-center justify-center rounded-xl bg-[#050505]/40 backdrop-blur-[2px]">
+          <span class="px-4 py-2 rounded-full bg-[#121214] ghost-border font-mono text-[11px] text-[#800020] uppercase tracking-widest">Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="relative group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 opacity-60 blur-[1px] transition-all duration-300">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Research</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">May 2026</span>
+          </div>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Research Methodologies in NLP</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">A deep dive into modern approaches in natural language processing research, from transformer architectures to evaluation frameworks.</p>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">12 min read</span>
+          </div>
+        </div>
+        <!-- Coming Soon overlay -->
+        <div class="absolute inset-0 flex items-center justify-center rounded-xl bg-[#050505]/40 backdrop-blur-[2px]">
+          <span class="px-4 py-2 rounded-full bg-[#121214] ghost-border font-mono text-[11px] text-[#800020] uppercase tracking-widest">Coming Soon</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="w-full pt-10 pb-28 md:pb-10 border-t border-[rgba(73,61,64,0.2)] bg-[#050505]">
+  <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">&copy; 2026 Mohamed Sy. All Rights Reserved.</span>
+    </div>
+    <button id="system-status-btn" class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#121214] ghost-border">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
+      <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">System Status: Operational</span>
+    </button>
+  </div>
+</footer>
+
+<!-- ─── MOBILE FULL-SCREEN MENU ─── -->
+<div id="mobile-menu" class="hidden fixed inset-0 bg-[#050505] z-[60] flex flex-col px-6 py-6">
+  <div class="flex justify-between items-center mb-8">
+    <a class="flex items-center gap-3" href="./Mohamed_Sy_main">
+      <img src="./image_1.png" alt="Logo" class="logo-dark h-10 w-auto">
+      <img src="./image_1.png" alt="Logo" class="logo-light h-10 w-auto hidden">
+      <span class="font-display text-sm font-bold text-white leading-snug">Mohamed<br>Sy</span>
+    </a>
+    <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-full ghost-border text-[#666666] hover:text-white transition-colors">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+  <nav class="flex flex-col flex-1 overflow-y-auto">
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./Mohamed_Sy_main">Home</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./speaking.html">Speaking</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./research.html">Research</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./experience.html">Experience</a>
+    <a class="font-display text-3xl font-bold text-[#800020] py-5 border-b border-[rgba(73,61,64,0.15)]" href="./blog.html">Blog</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./personal.html">Personal</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5" href="./gallery.html">Gallery</a>
+  </nav>
+  <div class="pt-6">
+    <a class="block bg-[#800020] text-white font-mono text-xs uppercase tracking-wider py-4 rounded-lg text-center hover:bg-[#5C0015] transition-all" href="./contact.html">Get in Touch</a>
+  </div>
+</div>
+
+<!-- ─── MOBILE BOTTOM NAV ─── -->
+<nav class="md:hidden fixed bottom-5 left-1/2 -translate-x-1/2 w-[90%] bg-[#121214]/90 backdrop-blur-md border border-[rgba(73,61,64,0.2)] rounded-full px-4 py-3 flex justify-around items-center z-50 shadow-2xl">
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./Mohamed_Sy_main">home</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./speaking.html">mic_external_on</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./research.html">history_edu</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./experience.html">work</a>
+  <a class="material-symbols-outlined text-[#800020]" href="./blog.html" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24;">edit_note</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./personal.html">person</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./gallery.html">photo_library</a>
+</nav>
+
+<!-- ─── SCRIPTS ─── -->
+<script>
+  // Mobile menu toggle
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+  hamburgerBtn?.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+  });
+  mobileMenuClose?.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+
+  // BW Mode Toggle
+  const bwToggle = document.getElementById('bw-toggle');
+  bwToggle?.addEventListener('click', () => {
+    document.documentElement.classList.toggle('bw-mode');
+  });
+</script>
+
+<!-- ─── BW MODE STYLES ─── -->
+<style id="bw-theme-override">
+  /* Backgrounds */
+  html.bw-mode body                         { background-color: #ffffff !important; }
+  html.bw-mode header                       { background-color: rgba(255,255,255,0.94) !important; border-color: rgba(0,0,0,0.1) !important; }
+  html.bw-mode footer                       { background-color: #f4f4f4 !important; border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode .backdrop-blur-xl            { background-color: rgba(255,255,255,0.94) !important; }
+  html.bw-mode [class*="bg-[#050505]"]      { background-color: #ffffff !important; }
+  html.bw-mode [class*="bg-[#121214]"]      { background-color: #f0f0f0 !important; }
+  html.bw-mode [class*="bg-[#0e0e10]"]      { background-color: #e8e8e8 !important; }
+  html.bw-mode [class*="bg-[#1a1a1c]"]      { background-color: #e0e0e0 !important; }
+  html.bw-mode [class*="bg-white/5"]        { background-color: rgba(0,0,0,0.04) !important; }
+
+  /* Borders */
+  html.bw-mode .ghost-border                { border-color: rgba(0,0,0,0.1) !important; }
+  html.bw-mode [class*="border-[rgba(64"]   { border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode [class*="border-[rgba(73"]   { border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode [class*="border-white"]       { border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode [class*="border-[#800020]"]  { border-color: #5C0015 !important; }
+
+  /* TEXT */
+  html.bw-mode *                            { color: #111111 !important; }
+
+  /* Muted text */
+  html.bw-mode [class*="text-[#666666]"],
+  html.bw-mode [class*="text-[#444]"]       { color: #555555 !important; }
+
+  /* Accent text */
+  html.bw-mode [class*="text-[#800020]"]    { color: #5C0015 !important; }
+
+  /* BW button active highlight */
+  html.bw-mode #bw-toggle                   { border-color: rgba(0,0,0,0.35) !important; font-weight: 700; }
+
+  /* Logo swap */
+  html:not(.bw-mode) .logo-light            { display: none; }
+  html.bw-mode       .logo-dark             { display: none !important; }
+  html.bw-mode       .logo-light            { display: block !important; }
+
+  /* Keep white text on accent backgrounds */
+  html.bw-mode [class*="bg-[#800020]"],
+  html.bw-mode [class*="bg-[#800020]"] *,
+  html.bw-mode [class*="bg-[#5C0015]"],
+  html.bw-mode [class*="bg-[#5C0015]"] *   { color: #ffffff !important; }
+</style>
+
+</body>
+</html>

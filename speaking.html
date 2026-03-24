@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="./image_1.png">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Mohamed Sy | Speaking</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "bg":                    "#050505",
+        "surface":               "#121214",
+        "surface-low":          "#0e0e10",
+        "surface-high":          "#1a1a1c",
+        "primary":               "#800020",
+        "primary-light":         "#A3324B",
+        "primary-dim":           "#5C0015",
+        "on-primary":            "#ffffff",
+        "muted":                 "#666666",
+        "border-subtle":         "rgba(73,61,64,0.2)",
+        "text-main":             "#F2F2F2",
+        "text-muted":            "#666666",
+      },
+      fontFamily: {
+        "display": ["Clash Display", "sans-serif"],
+        "body":    ["Switzer", "Plus Jakarta Sans", "sans-serif"],
+        "mono":    ["Space Mono", "monospace"],
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg:      "0.5rem",
+        xl:      "0.75rem",
+        "2xl":   "1.5rem",
+        full:    "9999px",
+      },
+    },
+  },
+}
+</script>
+<style>
+  body { background-color:#050505; color:#F2F2F2; }
+  .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; vertical-align:middle; }
+  .ghost-border { border:1px solid rgba(73,61,64,0.2); }
+  .leaf-radius  { border-radius:0.75rem 1.5rem 0.75rem 0.75rem; }
+  .glow-hover:hover { box-shadow:0 0 20px rgba(128,0,32,0.15); border-color:rgba(128,0,32,0.35); }
+  .cursor::after { content:"|"; animation:blink 0.75s step-end infinite; color:#800020; margin-left:2px; }
+  @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
+
+  #system-status-btn {
+    cursor: pointer;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  #system-status-btn:hover {
+    border-color: rgba(128,0,32,.45) !important;
+    box-shadow: 0 0 14px rgba(128,0,32,.1);
+  }
+  #system-status-btn:hover span:first-child {
+    box-shadow: 0 0 8px rgba(128,0,32,.8);
+  }
+  #system-status-btn:hover span:last-child::after {
+    content: " _";
+    animation: egg-blink .75s step-end infinite;
+    color: #800020;
+  }
+  @keyframes egg-blink { 0%,100%{opacity:1} 50%{opacity:0} }
+</style>
+
+<!-- BW Theme Override -->
+<style id="bw-theme-override">
+  html.bw-mode body                         { background-color: #ffffff !important; }
+  html.bw-mode header                       { background-color: rgba(255,255,255,0.94) !important; border-color: rgba(0,0,0,0.1) !important; }
+  html.bw-mode footer                       { background-color: #f4f4f4 !important; border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode .backdrop-blur-xl            { background-color: rgba(255,255,255,0.94) !important; }
+  html.bw-mode [class*="bg-[#050505]"]      { background-color: #ffffff !important; }
+  html.bw-mode [class*="bg-[#121214]"]      { background-color: #f0f0f0 !important; }
+  html.bw-mode [class*="bg-[#0e0e10]"]      { background-color: #e8e8e8 !important; }
+  html.bw-mode [class*="bg-[#1a1a1c]"]      { background-color: #e0e0e0 !important; }
+  html.bw-mode [class*="bg-white/5"]        { background-color: rgba(0,0,0,0.04) !important; }
+  html.bw-mode [class*="bg-white/10"]       { background-color: rgba(0,0,0,0.07) !important; }
+  html.bw-mode .ghost-border                { border-color: rgba(0,0,0,0.1) !important; outline-color: rgba(0,0,0,0.1) !important; }
+  html.bw-mode [class*="border-[rgba(64"]  { border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode [class*="border-white"]      { border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode [class*="border-[#800020]"] { border-color: #5C0015 !important; }
+  html.bw-mode [class*="from-[#050505]"]    { --tw-gradient-from: rgba(230,230,230,0.97) !important; }
+  html.bw-mode *                            { color: #111111 !important; }
+  html.bw-mode [class*="text-[#666666]"],
+  html.bw-mode [class*="text-[#444]"]       { color: #555555 !important; }
+  html.bw-mode [class*="text-[#800020]"]   { color: #5C0015 !important; }
+  html.bw-mode #bw-toggle                   { border-color: rgba(0,0,0,0.35) !important; font-weight: 700; }
+  html:not(.bw-mode) .logo-light            { display: none; }
+  html.bw-mode       .logo-dark             { display: none !important; }
+  html.bw-mode [class*="bg-[#800020]"],
+  html.bw-mode [class*="bg-[#800020]"] *,
+  html.bw-mode [class*="bg-[#5C0015]"],
+  html.bw-mode [class*="bg-[#5C0015]"] *   { color: #ffffff !important; }
+</style>
+</head>
+
+<body class="font-body bg-[#050505] text-[#F2F2F2] selection:bg-primary selection:text-white">
+
+<!-- ─── HEADER ─── -->
+<header class="fixed top-0 w-full flex justify-between items-center px-4 md:px-8 py-4 bg-[#050505]/85 backdrop-blur-xl border-b border-[rgba(73,61,64,0.2)] z-50">
+  <div class="flex items-center gap-3 md:gap-8">
+    <a class="flex items-center gap-3" href="./Mohamed_Sy_main">
+      <img src="./image_1.png" alt="Logo" class="logo-dark h-10 md:h-12 w-auto">
+      <img src="./image_1.png" alt="Logo" class="logo-light h-10 md:h-12 w-auto">
+      <span class="font-display text-sm font-bold text-white tracking-tight leading-snug">Mohamed<br>Sy</span>
+    </a>
+    <nav class="hidden md:flex gap-6 items-center">
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./Mohamed_Sy_main">Home</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#800020] font-bold border-b border-[#800020] pb-0.5" href="./speaking.html">Speaking</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./research.html">Research</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./experience.html">Experience</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./blog.html">Blog</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./personal.html">Personal</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./gallery.html">Gallery</a>
+    </nav>
+  </div>
+  <div class="flex items-center gap-2 md:gap-3">
+    <button id="bw-toggle" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full ghost-border font-mono text-[10px] uppercase text-[#666666] hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-[15px]">contrast</span>BW
+    </button>
+    <a class="hidden md:inline-flex bg-[#800020] text-white font-mono text-[11px] uppercase tracking-wider px-5 py-2 rounded-lg hover:bg-[#5C0015] hover:shadow-[0_0_20px_rgba(128,0,32,0.3)] transition-all duration-200" href="./contact.html">
+      Get in Touch
+    </a>
+    <button id="hamburger-btn" class="md:hidden flex items-center justify-center w-9 h-9 rounded-full ghost-border text-[#666666] hover:text-white transition-colors flex-shrink-0">
+      <span class="material-symbols-outlined text-[22px]">menu</span>
+    </button>
+  </div>
+</header>
+
+<!-- ─── MAIN CONTENT ─── -->
+<main class="pt-24 pb-28 md:pt-28 md:pb-20 px-4 md:px-6 max-w-7xl mx-auto">
+
+  <!-- Hero Section -->
+  <section class="mb-16 md:mb-20">
+    <div class="flex flex-col items-center text-center">
+      <span class="material-symbols-outlined text-[#800020] text-5xl mb-4">mic_external_on</span>
+      <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight text-white leading-none mb-6">
+        Emceeing &amp;<br>Public Speaking
+      </h1>
+      <p class="text-[#666666] max-w-2xl text-base md:text-lg leading-relaxed mb-10">
+        Available for keynotes, panel discussions, event hosting, and everything in between. I bring energy, clarity, and storytelling to every stage I step on.
+      </p>
+
+      <!-- Stats Row -->
+      <div class="flex flex-wrap justify-center gap-6 md:gap-12">
+        <div class="flex flex-col items-center gap-1 px-6 py-4 bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300">
+          <span class="font-display text-3xl md:text-4xl font-bold text-[#800020]">50+</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">Events</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 px-6 py-4 bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300">
+          <span class="font-display text-3xl md:text-4xl font-bold text-[#800020]">10K+</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">Audience Reached</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 px-6 py-4 bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300">
+          <span class="font-display text-3xl md:text-4xl font-bold text-[#800020]">5+</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">Countries</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Offer Section -->
+  <section class="mb-16 md:mb-20">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-[#800020]">star</span>
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-white">What I Offer</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Keynote Speaking -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 md:p-8 flex flex-col">
+        <span class="material-symbols-outlined text-[#800020] text-3xl mb-4">podium</span>
+        <h3 class="font-display text-xl font-bold text-white mb-2">Keynote Speaking</h3>
+        <p class="text-[#666666] text-sm leading-relaxed flex-1">
+          Thought-provoking talks on technology, innovation, data science, and leadership. Tailored presentations that resonate with your audience and leave a lasting impression.
+        </p>
+        <div class="mt-6 flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[#800020]">
+          <span>30 - 60 min</span>
+          <span class="text-[#666666]">|</span>
+          <span>Virtual & In-Person</span>
+        </div>
+      </div>
+      <!-- Event Emceeing -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 md:p-8 flex flex-col">
+        <span class="material-symbols-outlined text-[#800020] text-3xl mb-4">mic</span>
+        <h3 class="font-display text-xl font-bold text-white mb-2">Event Emceeing</h3>
+        <p class="text-[#666666] text-sm leading-relaxed flex-1">
+          Professional event hosting with seamless transitions, audience engagement, and dynamic stage presence. From tech conferences to gala dinners, I keep the energy alive.
+        </p>
+        <div class="mt-6 flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[#800020]">
+          <span>Half & Full Day</span>
+          <span class="text-[#666666]">|</span>
+          <span>All Event Types</span>
+        </div>
+      </div>
+      <!-- Panel Moderation -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 md:p-8 flex flex-col">
+        <span class="material-symbols-outlined text-[#800020] text-3xl mb-4">forum</span>
+        <h3 class="font-display text-xl font-bold text-white mb-2">Panel Moderation</h3>
+        <p class="text-[#666666] text-sm leading-relaxed flex-1">
+          Skilled facilitation of panel discussions, fireside chats, and Q&amp;A sessions. I craft insightful questions and ensure every panelist shines while keeping the conversation engaging.
+        </p>
+        <div class="mt-6 flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[#800020]">
+          <span>45 - 90 min</span>
+          <span class="text-[#666666]">|</span>
+          <span>2 - 5 Panelists</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past Events Section -->
+  <section class="mb-16 md:mb-20">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-[#800020]">event</span>
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-white">Past Events</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Event 1 -->
+      <div class="group bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#800020]">Keynote Speaker</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">Nov 2025</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Tech Summit 2025</h3>
+        <p class="text-[#666666] text-sm leading-relaxed">Delivered the opening keynote on the future of AI-driven decision making to an audience of 2,000+ industry professionals in Dubai.</p>
+        <div class="flex items-center gap-2 mt-auto pt-2">
+          <span class="material-symbols-outlined text-[#666666] text-[14px]">location_on</span>
+          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Dubai, UAE</span>
+        </div>
+      </div>
+      <!-- Event 2 -->
+      <div class="group bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#800020]">Event Emcee</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">Sep 2025</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Innovation Forum 2025</h3>
+        <p class="text-[#666666] text-sm leading-relaxed">Hosted a full-day innovation forum featuring 15 speakers, live demos, and interactive workshops with 800+ attendees.</p>
+        <div class="flex items-center gap-2 mt-auto pt-2">
+          <span class="material-symbols-outlined text-[#666666] text-[14px]">location_on</span>
+          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">London, UK</span>
+        </div>
+      </div>
+      <!-- Event 3 -->
+      <div class="group bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#800020]">Panel Moderator</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">Jun 2024</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Data Science Conference 2024</h3>
+        <p class="text-[#666666] text-sm leading-relaxed">Moderated a panel of industry leaders discussing ethical AI and responsible data practices at one of Europe's premier data events.</p>
+        <div class="flex items-center gap-2 mt-auto pt-2">
+          <span class="material-symbols-outlined text-[#666666] text-[14px]">location_on</span>
+          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Berlin, Germany</span>
+        </div>
+      </div>
+      <!-- Event 4 -->
+      <div class="group bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#800020]">Keynote Speaker</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">Mar 2024</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Startup World Cup Regional</h3>
+        <p class="text-[#666666] text-sm leading-relaxed">Spoke on leveraging data-driven strategies for startup growth, inspiring 500+ founders and investors at the regional finals.</p>
+        <div class="flex items-center gap-2 mt-auto pt-2">
+          <span class="material-symbols-outlined text-[#666666] text-[14px]">location_on</span>
+          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Riyadh, Saudi Arabia</span>
+        </div>
+      </div>
+      <!-- Event 5 -->
+      <div class="group bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#800020]">Event Emcee</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">Oct 2023</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Global Youth Leaders Forum</h3>
+        <p class="text-[#666666] text-sm leading-relaxed">Emceed a two-day international youth leadership forum connecting 1,200+ young professionals from over 40 countries.</p>
+        <div class="flex items-center gap-2 mt-auto pt-2">
+          <span class="material-symbols-outlined text-[#666666] text-[14px]">location_on</span>
+          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Istanbul, Turkey</span>
+        </div>
+      </div>
+      <!-- Event 6 -->
+      <div class="group bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#800020]">Panel Moderator</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-[#666666]">May 2023</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Digital Transformation Summit</h3>
+        <p class="text-[#666666] text-sm leading-relaxed">Facilitated a C-suite panel on enterprise digital transformation strategy, with executives from Fortune 500 companies.</p>
+        <div class="flex items-center gap-2 mt-auto pt-2">
+          <span class="material-symbols-outlined text-[#666666] text-[14px]">location_on</span>
+          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Paris, France</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="text-center py-12 md:py-16">
+    <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-8 md:p-12 max-w-3xl mx-auto">
+      <span class="material-symbols-outlined text-[#800020] text-5xl mb-4">campaign</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Book Me for Your Next Event</h2>
+      <p class="text-[#666666] text-base leading-relaxed mb-8 max-w-xl mx-auto">
+        Whether you need a keynote speaker, an event host, or a panel moderator, I would love to bring energy and insight to your next gathering.
+      </p>
+      <a class="inline-flex bg-[#800020] text-white font-mono text-[11px] uppercase tracking-wider px-8 py-3 rounded-lg hover:bg-[#5C0015] hover:shadow-[0_0_20px_rgba(128,0,32,0.3)] transition-all duration-200" href="./contact.html">
+        Get in Touch
+        <span class="material-symbols-outlined text-[14px] ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="w-full pt-10 pb-28 md:pb-10 border-t border-[rgba(73,61,64,0.2)] bg-[#050505]">
+  <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">&copy; 2026 Mohamed Sy. All Rights Reserved.</span>
+    </div>
+    <button id="system-status-btn" class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#121214] ghost-border">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
+      <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">System Status: Operational</span>
+    </button>
+  </div>
+</footer>
+
+<!-- ─── MOBILE FULL-SCREEN MENU ─── -->
+<div id="mobile-menu" class="hidden fixed inset-0 bg-[#050505] z-[60] flex flex-col px-6 py-6">
+  <div class="flex justify-between items-center mb-8">
+    <a class="flex items-center gap-3" href="./Mohamed_Sy_main">
+      <img src="./image_1.png" alt="Logo" class="logo-dark h-10 w-auto">
+      <img src="./image_1.png" alt="Logo" class="logo-light h-10 w-auto">
+      <span class="font-display text-sm font-bold text-white leading-snug">Mohamed<br>Sy</span>
+    </a>
+    <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-full ghost-border text-[#666666] hover:text-white transition-colors">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+  <nav class="flex flex-col flex-1 overflow-y-auto">
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./Mohamed_Sy_main">Home</a>
+    <a class="font-display text-3xl font-bold text-[#800020] py-5 border-b border-[rgba(73,61,64,0.15)]" href="./speaking.html">Speaking</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./research.html">Research</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./experience.html">Experience</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./blog.html">Blog</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./personal.html">Personal</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5" href="./gallery.html">Gallery</a>
+  </nav>
+  <div class="pt-6">
+    <a class="block bg-[#800020] text-white font-mono text-xs uppercase tracking-wider py-4 rounded-lg text-center hover:bg-[#5C0015] transition-all" href="./contact.html">Get in Touch</a>
+  </div>
+</div>
+
+<!-- ─── MOBILE BOTTOM NAV ─── -->
+<nav class="md:hidden fixed bottom-5 left-1/2 -translate-x-1/2 w-[90%] bg-[#121214]/90 backdrop-blur-md border border-[rgba(73,61,64,0.2)] rounded-full px-4 py-3 flex justify-around items-center z-50 shadow-2xl">
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./Mohamed_Sy_main">home</a>
+  <a class="material-symbols-outlined text-[#800020]" href="./speaking.html" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24;">mic_external_on</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./research.html">history_edu</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./experience.html">work</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./personal.html">person</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./gallery.html">photo_library</a>
+</nav>
+
+<!-- ─── SCRIPTS ─── -->
+<script>
+  // BW Toggle
+  const bwBtn = document.getElementById('bw-toggle');
+  bwBtn.addEventListener('click', () => {
+    document.documentElement.classList.toggle('bw-mode');
+  });
+
+  // Hamburger Menu
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+  });
+  mobileMenuClose.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+</script>
+
+</body>
+</html>

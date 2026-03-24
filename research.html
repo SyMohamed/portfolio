@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="./image_1.png">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Mohamed Sy | Research</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "bg":                    "#050505",
+        "surface":               "#121214",
+        "surface-low":          "#0e0e10",
+        "surface-high":          "#1a1a1c",
+        "primary":               "#800020",
+        "primary-light":         "#A3324B",
+        "primary-dim":           "#5C0015",
+        "on-primary":            "#ffffff",
+        "muted":                 "#666666",
+        "border-subtle":         "rgba(73,61,64,0.2)",
+        "text-main":             "#F2F2F2",
+        "text-muted":            "#666666",
+      },
+      fontFamily: {
+        "display": ["Clash Display", "sans-serif"],
+        "body":    ["Switzer", "Plus Jakarta Sans", "sans-serif"],
+        "mono":    ["Space Mono", "monospace"],
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg:      "0.5rem",
+        xl:      "0.75rem",
+        "2xl":   "1.5rem",
+        full:    "9999px",
+      },
+    },
+  },
+}
+</script>
+<style>
+  body { background-color:#050505; color:#F2F2F2; }
+  .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; vertical-align:middle; }
+  .ghost-border { border:1px solid rgba(73,61,64,0.2); }
+  .leaf-radius  { border-radius:0.75rem 1.5rem 0.75rem 0.75rem; }
+  .glow-hover:hover { box-shadow:0 0 20px rgba(128,0,32,0.15); border-color:rgba(128,0,32,0.35); }
+  .cursor::after { content:"|"; animation:blink 0.75s step-end infinite; color:#800020; margin-left:2px; }
+  @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
+</style>
+<style>
+  #system-status-btn {
+    cursor: pointer;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  #system-status-btn:hover {
+    border-color: rgba(128,0,32,.45) !important;
+    box-shadow: 0 0 14px rgba(128,0,32,.1);
+  }
+  #system-status-btn:hover span:first-child {
+    box-shadow: 0 0 8px rgba(128,0,32,.8);
+  }
+  #system-status-btn:hover span:last-child::after {
+    content: " _";
+    animation: egg-blink .75s step-end infinite;
+    color: #800020;
+  }
+  @keyframes egg-blink { 0%,100%{opacity:1} 50%{opacity:0} }
+</style>
+</head>
+<body class="font-body">
+
+<!-- ─── HEADER ─── -->
+<header class="fixed top-0 w-full flex justify-between items-center px-4 md:px-8 py-4 bg-[#050505]/85 backdrop-blur-xl border-b border-[rgba(73,61,64,0.2)] z-50">
+  <div class="flex items-center gap-3 md:gap-8">
+    <a class="flex items-center gap-3" href="./Mohamed_Sy_main"><img src="./image_1.png" alt="Logo" class="logo-dark h-10 md:h-12 w-auto"><img src="./image_1.png" alt="Logo" class="logo-light h-10 md:h-12 w-auto"><span class="font-display text-sm font-bold text-white tracking-tight leading-snug">Mohamed<br>Sy</span></a>
+    <nav class="hidden md:flex gap-6 items-center">
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./Mohamed_Sy_main">Home</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./speaking.html">Speaking</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#800020] font-bold border-b border-[#800020] pb-0.5" href="./research.html">Research</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./experience.html">Experience</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./blog.html">Blog</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./personal.html">Personal</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./gallery.html">Gallery</a>
+    </nav>
+  </div>
+  <div class="flex items-center gap-2 md:gap-3">
+    <button id="bw-toggle" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full ghost-border font-mono text-[10px] uppercase text-[#666666] hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-[15px]">contrast</span>BW
+    </button>
+    <a class="hidden md:inline-flex bg-[#800020] text-white font-mono text-[11px] uppercase tracking-wider px-5 py-2 rounded-lg hover:bg-[#5C0015] hover:shadow-[0_0_20px_rgba(128,0,32,0.3)] transition-all duration-200" href="./contact.html">
+      Get in Touch
+    </a>
+    <button id="hamburger-btn" class="md:hidden flex items-center justify-center w-9 h-9 rounded-full ghost-border text-[#666666] hover:text-white transition-colors flex-shrink-0">
+      <span class="material-symbols-outlined text-[22px]">menu</span>
+    </button>
+  </div>
+</header>
+
+<!-- ─── MAIN CONTENT ─── -->
+<main class="pt-24 pb-28 md:pt-28 md:pb-20 px-4 md:px-6 max-w-7xl mx-auto">
+
+  <!-- Hero Section -->
+  <div class="mb-8">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">// research</span>
+      <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#0e0e10] ghost-border">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
+        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">Active</span>
+      </div>
+    </div>
+    <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight text-white leading-none mb-4">
+      Research Index
+    </h1>
+    <p class="text-[#666666] max-w-md text-base leading-relaxed">
+      Exploring the intersection of artificial intelligence, data science, and real-world applications. My research focuses on building systems that bridge theory and practice.
+    </p>
+  </div>
+
+  <!-- Stats Row -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+    <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest block mb-2">Status</span>
+      <span class="font-display text-xl font-bold text-[#800020]">Parsing</span>
+    </div>
+    <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest block mb-2">Papers</span>
+      <span class="font-display text-xl font-bold text-white">7</span>
+    </div>
+    <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest block mb-2">Citations</span>
+      <span class="font-display text-xl font-bold text-white">45+</span>
+    </div>
+    <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest block mb-2">Focus</span>
+      <span class="font-display text-xl font-bold text-white">AI & Data Science</span>
+    </div>
+  </div>
+
+  <!-- Research Areas -->
+  <div class="mb-8">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">// research areas</span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- NLP Card -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col gap-3">
+        <div class="w-10 h-10 rounded-lg bg-[#0e0e10] flex items-center justify-center ghost-border">
+          <span class="material-symbols-outlined text-[#800020]">translate</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Natural Language Processing</h3>
+        <p class="text-[#666666] text-[14px] leading-relaxed">Developing models for text classification, sentiment analysis, and language understanding in multilingual contexts.</p>
+        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest mt-auto">3 papers</span>
+      </div>
+      <!-- Data Science Card -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col gap-3">
+        <div class="w-10 h-10 rounded-lg bg-[#0e0e10] flex items-center justify-center ghost-border">
+          <span class="material-symbols-outlined text-[#800020]">analytics</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Data Science Applications</h3>
+        <p class="text-[#666666] text-[14px] leading-relaxed">Applying statistical methods and data-driven approaches to solve complex problems in business and social domains.</p>
+        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest mt-auto">2 papers</span>
+      </div>
+      <!-- ML Systems Card -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col gap-3">
+        <div class="w-10 h-10 rounded-lg bg-[#0e0e10] flex items-center justify-center ghost-border">
+          <span class="material-symbols-outlined text-[#800020]">memory</span>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white">Machine Learning Systems</h3>
+        <p class="text-[#666666] text-[14px] leading-relaxed">Designing scalable ML pipelines and production-grade systems for real-time inference and model deployment.</p>
+        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest mt-auto">2 papers</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Publications -->
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">// publications</span>
+    </div>
+    <div class="space-y-3">
+      <!-- Paper 1 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2025</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Multilingual Sentiment Analysis Using Transformer Architectures</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">A comparative study of fine-tuned transformer models for sentiment classification across Arabic, French, and English social media datasets.</p>
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">NLP</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Transformers</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">18 citations</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Paper 2 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Predictive Modeling for Urban Resource Allocation</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Leveraging ensemble methods and geospatial data to optimize public resource distribution in growing metropolitan areas.</p>
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Data Science</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Geospatial</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">12 citations</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Paper 3 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Scalable Feature Stores for Real-Time ML Inference</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Architectural patterns for building low-latency feature serving systems that support online and batch prediction workloads at scale.</p>
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">MLOps</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Systems</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">9 citations</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Paper 4 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2023</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Domain-Adaptive Text Classification for Low-Resource Languages</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Transfer learning strategies for building accurate text classifiers when labeled data is scarce, with applications to West African language corpora.</p>
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">NLP</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Transfer Learning</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">6 citations</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="w-full pt-10 pb-28 md:pb-10 border-t border-[rgba(73,61,64,0.2)] bg-[#050505]">
+  <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">&copy; 2026 Mohamed Sy. All Rights Reserved.</span>
+    </div>
+    <button id="system-status-btn" class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#121214] ghost-border">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
+      <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">System Status: Operational</span>
+    </button>
+  </div>
+</footer>
+
+<!-- ─── MOBILE MENU ─── -->
+<div id="mobile-menu" class="hidden fixed inset-0 bg-[#050505] z-[60] flex flex-col px-6 py-6">
+  <div class="flex justify-between items-center mb-8">
+    <a class="flex items-center gap-3" href="./Mohamed_Sy_main">
+      <img src="./image_1.png" alt="Logo" class="logo-dark h-10 w-auto">
+      <img src="./image_1.png" alt="Logo" class="logo-light h-10 w-auto">
+      <span class="font-display text-sm font-bold text-white leading-snug">Mohamed<br>Sy</span>
+    </a>
+    <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-full ghost-border text-[#666666] hover:text-white transition-colors">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+  <nav class="flex flex-col flex-1 overflow-y-auto">
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./Mohamed_Sy_main">Home</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./speaking.html">Speaking</a>
+    <a class="font-display text-3xl font-bold text-[#800020] py-5 border-b border-[rgba(73,61,64,0.15)]" href="./research.html">Research</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./experience.html">Experience</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./blog.html">Blog</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./personal.html">Personal</a>
+    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5" href="./gallery.html">Gallery</a>
+  </nav>
+  <div class="pt-6">
+    <a class="block bg-[#800020] text-white font-mono text-xs uppercase tracking-wider py-4 rounded-lg text-center hover:bg-[#5C0015] transition-all" href="./contact.html">Get in Touch</a>
+  </div>
+</div>
+
+<!-- ─── MOBILE BOTTOM NAV ─── -->
+<nav class="md:hidden fixed bottom-5 left-1/2 -translate-x-1/2 w-[90%] bg-[#121214]/90 backdrop-blur-md border border-[rgba(73,61,64,0.2)] rounded-full px-4 py-3 flex justify-around items-center z-50 shadow-2xl">
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./Mohamed_Sy_main">home</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./speaking.html">mic_external_on</a>
+  <a class="material-symbols-outlined text-[#800020]" href="./research.html">history_edu</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./experience.html">work</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./personal.html">person</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./gallery.html">photo_library</a>
+</nav>
+
+<!-- ─── SCRIPTS ─── -->
+<script>
+  // Hamburger menu toggle
+  document.getElementById('hamburger-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.remove('hidden');
+  });
+  document.getElementById('mobile-menu-close').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.add('hidden');
+  });
+
+  // BW mode toggle
+  document.getElementById('bw-toggle').addEventListener('click', function() {
+    document.documentElement.classList.toggle('bw-mode');
+  });
+</script>
+
+<!-- ─── BW THEME OVERRIDE ─── -->
+<style id="bw-theme-override">
+  /* Backgrounds */
+  html.bw-mode body                         { background-color: #ffffff !important; }
+  html.bw-mode header                       { background-color: rgba(255,255,255,0.94) !important; border-color: rgba(0,0,0,0.1) !important; }
+  html.bw-mode footer                       { background-color: #f4f4f4 !important; border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode .backdrop-blur-xl            { background-color: rgba(255,255,255,0.94) !important; }
+  html.bw-mode [class*="bg-[#050505]"]      { background-color: #ffffff !important; }
+  html.bw-mode [class*="bg-[#121214]"]      { background-color: #f0f0f0 !important; }
+  html.bw-mode [class*="bg-[#0e0e10]"]      { background-color: #e8e8e8 !important; }
+  html.bw-mode [class*="bg-[#1a1a1c]"]      { background-color: #e0e0e0 !important; }
+  html.bw-mode [class*="bg-white/5"]        { background-color: rgba(0,0,0,0.04) !important; }
+  html.bw-mode [class*="bg-white/10"]       { background-color: rgba(0,0,0,0.07) !important; }
+
+  /* Borders */
+  html.bw-mode .ghost-border                { border-color: rgba(0,0,0,0.1) !important; outline-color: rgba(0,0,0,0.1) !important; }
+  html.bw-mode [class*="border-[rgba(64"]  { border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode [class*="border-white"]      { border-color: rgba(0,0,0,0.08) !important; }
+  html.bw-mode [class*="border-[#800020]"] { border-color: #5C0015 !important; }
+
+  /* Gradients */
+  html.bw-mode [class*="from-[#050505]"]    { --tw-gradient-from: rgba(230,230,230,0.97) !important; }
+  html.bw-mode [class*="from-black"]        { --tw-gradient-from: rgba(210,210,210,0.9) !important; }
+
+  /* TEXT */
+  html.bw-mode *                            { color: #111111 !important; }
+
+  /* Muted text */
+  html.bw-mode [class*="text-[#666666]"],
+  html.bw-mode [class*="text-[#444]"],
+  html.bw-mode .text-gray-400,
+  html.bw-mode .text-gray-500,
+  html.bw-mode .text-gray-600               { color: #555555 !important; }
+
+  /* Accent text */
+  html.bw-mode [class*="text-[#800020]"]   { color: #5C0015 !important; }
+
+  /* BW button active highlight */
+  html.bw-mode #bw-toggle                   { border-color: rgba(0,0,0,0.35) !important; font-weight: 700; }
+
+  /* Logo swap */
+  html:not(.bw-mode) .logo-light            { display: none; }
+  html.bw-mode       .logo-dark             { display: none !important; }
+
+  /* ALWAYS WHITE on accent backgrounds */
+  html.bw-mode [class*="bg-[#800020]"],
+  html.bw-mode [class*="bg-[#800020]"] *,
+  html.bw-mode [class*="bg-[#5C0015]"],
+  html.bw-mode [class*="bg-[#5C0015]"] *   { color: #ffffff !important; }
+</style>
+</body>
+</html>
