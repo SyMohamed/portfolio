@@ -2,14 +2,14 @@
 <!-- saved from url=(0021)https://sabbagh.info/ -->
 <html class="dark" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<link rel="icon" type="image/png" href="./Abdelrahman Sabbagh _ Home_files/dark_logo.png">
+<link rel="icon" type="image/png" href="./image_1.png">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Abdelrahman Sabbagh | Home</title>
-  <link rel="stylesheet" href="./Abdelrahman Sabbagh _ Home_files/theme.css">
-  <script src="./Abdelrahman Sabbagh _ Home_files/theme.js"></script>
-  <script src="./Abdelrahman Sabbagh _ Home_files/saved_resource"></script>
-<link href="./Abdelrahman Sabbagh _ Home_files/css2" rel="stylesheet">
-<link href="./Abdelrahman Sabbagh _ Home_files/css" rel="stylesheet">
+<title>Mohamed Sy | Home</title>
+  <link rel="stylesheet" href="./Mohamed Sy _ Home_files/theme.css">
+  <script src="./Mohamed Sy _ Home_files/theme.js"></script>
+  <script src="./Mohamed Sy _ Home_files/saved_resource"></script>
+<link href="./Mohamed Sy _ Home_files/css2" rel="stylesheet">
+<link href="./Mohamed Sy _ Home_files/css" rel="stylesheet">
 <script id="tailwind-config">
 tailwind.config = {
   darkMode: "class",
@@ -457,7 +457,7 @@ tailwind.config = {
 <!-- ─── NAV ─── -->
 <header class="fixed top-0 w-full flex justify-between items-center px-4 md:px-8 py-4 bg-[#050505]/85 backdrop-blur-xl border-b border-[rgba(73,61,64,0.2)] z-50">
   <div class="flex items-center gap-3 md:gap-8">
-    <a class="flex items-center gap-3" href="https://sabbagh.info/"><img src="./Abdelrahman Sabbagh _ Home_files/dark_logo.png" alt="Logo" class="logo-dark h-10 md:h-12 w-auto"><img src="./Abdelrahman Sabbagh _ Home_files/light_logo.png" alt="Logo" class="logo-light h-10 md:h-12 w-auto"><span class="font-display text-sm font-bold text-white tracking-tight leading-snug">Abdelrahman<br>Sabbagh</span></a>
+    <a class="flex items-center gap-3" href="https://sabbagh.info/"><img src="./image_1.png" alt="Logo" class="logo-dark h-10 md:h-12 w-auto"><img src="./image_1.png" alt="Logo" class="logo-light h-10 md:h-12 w-auto"><span class="font-display text-sm font-bold text-white tracking-tight leading-snug">Mohamed<br>Sy</span></a>
     <nav class="hidden md:flex gap-6 items-center">
       <a class="font-mono uppercase tracking-widest text-[11px] text-[#800020] font-bold border-b border-[#800020] pb-0.5" href="https://sabbagh.info/">Home</a>
       <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="https://sabbagh.info/speaking">Speaking</a>
@@ -490,7 +490,7 @@ tailwind.config = {
 
     <!-- Intro tile 2×2 (mobile: 2 rows tall) -->
     <div class="row-span-2 md:col-span-2 md:row-span-2 bg-[#121214] p-6 md:p-10 flex flex-col justify-end leaf-radius ghost-border glow-hover transition-all duration-300 relative overflow-hidden cursor-default">
-      <img src="./Abdelrahman Sabbagh _ Home_files/me_dark.png" alt="Abdelrahman Sabbagh" class="absolute inset-0 w-full h-full object-cover object-top grayscale opacity-50">
+      <img src="./image_1.png" alt="Mohamed Sy" class="absolute inset-0 w-full h-full object-cover object-top grayscale opacity-50">
       <div class="absolute inset-0 bg-gradient-to-t from-[#121214] via-[#12121430] to-transparent"></div>
       <div class="relative z-10 space-y-5">
         <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight text-white leading-none">
@@ -505,7 +505,7 @@ tailwind.config = {
 
     <!-- Speaking tile 1×2 -->
     <a class="row-span-2 md:col-span-1 md:row-span-2 bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 overflow-hidden relative group cursor-pointer" href="https://sabbagh.info/speaking">
-      <img alt="Keynote speaker on stage" class="absolute inset-0 w-full h-full object-cover object-[center_20%] grayscale opacity-35 group-hover:scale-105 transition-transform duration-700" src="./Abdelrahman Sabbagh _ Home_files/me_speaker.png">
+      <img alt="Keynote speaker on stage" class="absolute inset-0 w-full h-full object-cover object-[center_20%] grayscale opacity-35 group-hover:scale-105 transition-transform duration-700" src="./image_1.png">
       <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#05050540] to-transparent z-10"></div>
       <div class="absolute bottom-0 left-0 p-7 z-20 w-full">
         <span class="material-symbols-outlined text-[#800020] mb-3 block">mic_external_on</span>
@@ -591,7 +591,7 @@ tailwind.config = {
 <footer class="w-full pt-10 pb-28 md:pb-10 border-t border-[rgba(73,61,64,0.2)] bg-[#050505]">
   <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="flex flex-col md:flex-row items-center gap-6">
-      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">© 2026 Abdelrahman Sabbagh. All Rights Reserved.</span>
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">© 2026 Mohamed Sy. All Rights Reserved.</span>
       <div class="flex gap-5">
         <!--<a class="font-mono text-[10px] text-[#444] uppercase hover:text-white transition-colors" href="#">Privacy</a>-->
         <!--<a class="font-mono text-[10px] text-[#444] uppercase hover:text-white transition-colors" href="#">Terms</a>-->
@@ -605,7 +605,7 @@ tailwind.config = {
     </button>
   </div>
 </footer>
-<script src="./Abdelrahman Sabbagh _ Home_files/snake-easter-egg.js"></script><div id="egg-overlay">
+<script src="./Mohamed Sy _ Home_files/snake-easter-egg.js"></script><div id="egg-overlay">
   <div class="egg-win" dir="ltr">
 
     <!-- Title bar -->
@@ -800,15 +800,15 @@ tailwind.config = {
       </div>
     </div>
   </div></div></div>
-<script src="./Abdelrahman Sabbagh _ Home_files/sudoku-game.js"></script>
+<script src="./Mohamed Sy _ Home_files/sudoku-game.js"></script>
 
 <!-- ─── MOBILE FULL-SCREEN MENU ─── -->
 <div id="mobile-menu" class="hidden fixed inset-0 bg-[#050505] z-[60] flex flex-col px-6 py-6">
   <div class="flex justify-between items-center mb-8">
     <a class="flex items-center gap-3" href="https://sabbagh.info/">
-      <img src="./Abdelrahman Sabbagh _ Home_files/dark_logo.png" alt="Logo" class="logo-dark h-10 w-auto">
-      <img src="./Abdelrahman Sabbagh _ Home_files/light_logo.png" alt="Logo" class="logo-light h-10 w-auto">
-      <span class="font-display text-sm font-bold text-white leading-snug">Abdelrahman<br>Sabbagh</span>
+      <img src="./image_1.png" alt="Logo" class="logo-dark h-10 w-auto">
+      <img src="./image_1.png" alt="Logo" class="logo-light h-10 w-auto">
+      <span class="font-display text-sm font-bold text-white leading-snug">Mohamed<br>Sy</span>
     </a>
     <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-full ghost-border text-[#666666] hover:text-white transition-colors">
       <span class="material-symbols-outlined">close</span>
