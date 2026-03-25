@@ -97,15 +97,15 @@ tailwind.config = {
       <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight text-white leading-none">Blog</h1>
       <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#800020]/15 ghost-border">
         <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
-        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">Latest Draft</span>
+        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">Active</span>
       </span>
     </div>
     <p class="text-[#666666] max-w-2xl text-base leading-relaxed font-body">
-      Thoughts on AI, public speaking, research, and everything in between. A space for long-form writing and reflection.
+      Thoughts on AI-driven spectroscopy, gas sensing, combustion science, and the intersection of machine learning with physical diagnostics. A space for research reflections and technical deep dives.
     </p>
   </section>
 
-  <!-- Coming Soon Banner -->
+  <!-- Featured Post Banner -->
   <section class="mb-16">
     <div class="bg-[#121214] ghost-border rounded-xl p-10 md:p-16 text-center relative overflow-hidden">
       <!-- Decorative background elements -->
@@ -115,85 +115,126 @@ tailwind.config = {
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-[#800020] rounded-full"></div>
       </div>
       <div class="relative z-10">
-        <span class="material-symbols-outlined text-[64px] text-[#800020] mb-6 block float-anim">edit_note</span>
-        <h2 class="font-display text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">Coming Soon</h2>
+        <span class="material-symbols-outlined text-[64px] text-[#800020] mb-6 block float-anim">science</span>
+        <h2 class="font-display text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">How Deep Learning is Revolutionizing Gas Sensing</h2>
         <p class="text-[#666666] max-w-lg mx-auto text-base leading-relaxed mb-6">
-          The blog is currently under development. I'm working on crafting thoughtful articles on technology, research, and personal growth. Stay tuned.
+          A deep dive into how convolutional neural networks and variational autoencoders are enabling real-time, multi-species gas detection from complex spectroscopic signals -- and why this matters for environmental monitoring and industrial safety.
         </p>
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0e0e10] ghost-border">
           <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
-          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Status: In Development</span>
+          <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Featured &middot; Jan 2025</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Placeholder Article Cards -->
+  <!-- Article Cards -->
   <section>
     <div class="flex items-center justify-between mb-8">
-      <h3 class="font-mono text-[11px] text-[#666666] uppercase tracking-widest">Upcoming Articles</h3>
-      <span class="font-mono text-[10px] text-[#444] uppercase tracking-widest">Preview</span>
+      <h3 class="font-mono text-[11px] text-[#666666] uppercase tracking-widest">Recent Articles</h3>
+      <span class="font-mono text-[10px] text-[#444] uppercase tracking-widest">6 Posts</span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
       <!-- Card 1 -->
-      <div class="relative group">
-        <div class="bg-[#121214] ghost-border rounded-xl p-6 opacity-60 blur-[1px] transition-all duration-300">
+      <div class="group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
             <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">AI</span>
-            <span class="font-mono text-[10px] text-[#444] tracking-wide">Mar 2026</span>
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Gas Sensing</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">Jan 2025</span>
           </div>
-          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">The Future of AI in Everyday Life</h4>
-          <p class="text-[#666666] text-sm leading-relaxed mb-4">Exploring how artificial intelligence is quietly reshaping our daily routines, from smart assistants to predictive healthcare, and what lies ahead.</p>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">How Deep Learning is Revolutionizing Gas Sensing</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">CNNs and VAEs are transforming how we detect multiple gas species simultaneously from spectroscopic data. Here is how these architectures handle overlapping absorption features that traditional methods struggle with.</p>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">10 min read</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Machine Learning</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">Dec 2024</span>
+          </div>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">My Experience at NeurIPS 2024</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">Reflections on presenting our combustion and spectroscopy research at NeurIPS in Vancouver. Bridging the gap between physical sciences and the ML community opened unexpected doors for collaboration.</p>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">7 min read</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Spectroscopy</span>
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">ML</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">Nov 2024</span>
+          </div>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Certifiably Robust ML for Spectroscopic Classification</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">Our VOC-certifire framework uses randomized smoothing to provide provable robustness guarantees for volatile organic compound classification. Why certified defenses matter when deploying ML in safety-critical sensing applications.</p>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">9 min read</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">AI</span>
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Spectroscopy</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">Sep 2024</span>
+          </div>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Blind Source Separation: Detecting Gases Without Reference Spectra</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">Variational autoencoders can learn to disentangle overlapping gas signatures without any labeled reference spectra. This unsupervised approach could unlock gas sensing in environments where reference databases are incomplete.</p>
           <div class="flex items-center gap-2">
             <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
             <span class="font-mono text-[10px] text-[#444] tracking-wide">8 min read</span>
           </div>
         </div>
-        <!-- Coming Soon overlay -->
-        <div class="absolute inset-0 flex items-center justify-center rounded-xl bg-[#050505]/40 backdrop-blur-[2px]">
-          <span class="px-4 py-2 rounded-full bg-[#121214] ghost-border font-mono text-[11px] text-[#800020] uppercase tracking-widest">Coming Soon</span>
-        </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="relative group">
-        <div class="bg-[#121214] ghost-border rounded-xl p-6 opacity-60 blur-[1px] transition-all duration-300">
+      <!-- Card 5 -->
+      <div class="group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Speaking</span>
-            <span class="font-mono text-[10px] text-[#444] tracking-wide">Apr 2026</span>
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Combustion</span>
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">AI</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">Jul 2024</span>
           </div>
-          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Lessons from Public Speaking</h4>
-          <p class="text-[#666666] text-sm leading-relaxed mb-4">What I've learned from years on stage: overcoming nerves, connecting with audiences, and the art of storytelling in professional settings.</p>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">From Shock Tubes to Machine Learning: A Research Journey</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">A personal reflection on how my path evolved from traditional combustion diagnostics and shock tube experiments to building deep learning pipelines for spectroscopic analysis at KAUST.</p>
           <div class="flex items-center gap-2">
             <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
             <span class="font-mono text-[10px] text-[#444] tracking-wide">6 min read</span>
           </div>
         </div>
-        <!-- Coming Soon overlay -->
-        <div class="absolute inset-0 flex items-center justify-center rounded-xl bg-[#050505]/40 backdrop-blur-[2px]">
-          <span class="px-4 py-2 rounded-full bg-[#121214] ghost-border font-mono text-[11px] text-[#800020] uppercase tracking-widest">Coming Soon</span>
-        </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="relative group">
-        <div class="bg-[#121214] ghost-border rounded-xl p-6 opacity-60 blur-[1px] transition-all duration-300">
+      <!-- Card 6 -->
+      <div class="group">
+        <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Research</span>
-            <span class="font-mono text-[10px] text-[#444] tracking-wide">May 2026</span>
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Gas Sensing</span>
+            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Environmental Monitoring</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">May 2024</span>
           </div>
-          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Research Methodologies in NLP</h4>
-          <p class="text-[#666666] text-sm leading-relaxed mb-4">A deep dive into modern approaches in natural language processing research, from transformer architectures to evaluation frameworks.</p>
+          <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Building a Compact Natural Gas Analyzer with a Single Laser</h4>
+          <p class="text-[#666666] text-sm leading-relaxed mb-4">A technical overview of our collaboration with Aramco to build a field-deployable C1-C5 hydrocarbon analyzer using a single interband cascade laser and machine learning-based spectral decomposition.</p>
           <div class="flex items-center gap-2">
             <span class="material-symbols-outlined text-[14px] text-[#444]">schedule</span>
-            <span class="font-mono text-[10px] text-[#444] tracking-wide">12 min read</span>
+            <span class="font-mono text-[10px] text-[#444] tracking-wide">11 min read</span>
           </div>
-        </div>
-        <!-- Coming Soon overlay -->
-        <div class="absolute inset-0 flex items-center justify-center rounded-xl bg-[#050505]/40 backdrop-blur-[2px]">
-          <span class="px-4 py-2 rounded-full bg-[#121214] ghost-border font-mono text-[11px] text-[#800020] uppercase tracking-widest">Coming Soon</span>
         </div>
       </div>
 
