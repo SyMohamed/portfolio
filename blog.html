@@ -18,9 +18,9 @@ tailwind.config = {
         "surface":          "#121214",
         "surface-low":      "#0e0e10",
         "surface-high":     "#1a1a1c",
-        "primary":          "#800020",
-        "primary-light":    "#A3324B",
-        "primary-dim":      "#5C0015",
+        "primary":          "#1E3A5F",
+        "primary-light":    "#2E5A8F",
+        "primary-dim":      "#142844",
         "on-primary":       "#ffffff",
         "muted":            "#666666",
         "border-subtle":    "rgba(73,61,64,0.2)",
@@ -49,7 +49,7 @@ tailwind.config = {
   .ghost-border { border:1px solid rgba(73,61,64,0.2); }
   .leaf-radius  { border-radius:0.75rem 1.5rem 0.75rem 0.75rem; }
   .glow-hover:hover { box-shadow:0 0 20px rgba(128,0,32,0.15); border-color:rgba(128,0,32,0.35); }
-  .cursor::after { content:"|"; animation:blink 0.75s step-end infinite; color:#800020; margin-left:2px; }
+  .cursor::after { content:"|"; animation:blink 0.75s step-end infinite; color:#1E3A5F; margin-left:2px; }
   @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
   @keyframes float { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-8px); } }
   .float-anim { animation: float 3s ease-in-out infinite; }
@@ -70,7 +70,7 @@ tailwind.config = {
       <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./speaking.html">Speaking</a>
       <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./research.html">Research</a>
       <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./experience.html">Experience</a>
-      <a class="font-mono uppercase tracking-widest text-[11px] text-[#800020] font-bold border-b border-[#800020] pb-0.5" href="./blog.html">Blog</a>
+      <a class="font-mono uppercase tracking-widest text-[11px] text-[#1E3A5F] font-bold border-b border-[#1E3A5F] pb-0.5" href="./blog.html">Blog</a>
       <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./personal.html">Personal</a>
       <a class="font-mono uppercase tracking-widest text-[11px] text-[#666666] hover:text-white transition-colors" href="./gallery.html">Gallery</a>
     </nav>
@@ -79,7 +79,7 @@ tailwind.config = {
     <button id="bw-toggle" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full ghost-border font-mono text-[10px] uppercase text-[#666666] hover:text-white transition-colors">
       <span class="material-symbols-outlined text-[15px]">contrast</span>BW
     </button>
-    <a class="hidden md:inline-flex bg-[#800020] text-white font-mono text-[11px] uppercase tracking-wider px-5 py-2 rounded-lg hover:bg-[#5C0015] hover:shadow-[0_0_20px_rgba(128,0,32,0.3)] transition-all duration-200" href="./contact.html">
+    <a class="hidden md:inline-flex bg-[#1E3A5F] text-white font-mono text-[11px] uppercase tracking-wider px-5 py-2 rounded-lg hover:bg-[#142844] hover:shadow-[0_0_20px_rgba(128,0,32,0.3)] transition-all duration-200" href="./contact.html">
       Get in Touch
     </a>
     <button id="hamburger-btn" class="md:hidden flex items-center justify-center w-9 h-9 rounded-full ghost-border text-[#666666] hover:text-white transition-colors flex-shrink-0">
@@ -95,9 +95,9 @@ tailwind.config = {
   <section class="mb-16">
     <div class="flex items-center gap-4 mb-6">
       <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight text-white leading-none">Blog</h1>
-      <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#800020]/15 ghost-border">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
-        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">Active</span>
+      <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E3A5F]/15 ghost-border">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#1E3A5F] animate-pulse"></span>
+        <span class="font-mono text-[10px] text-[#1E3A5F] uppercase tracking-widest">Active</span>
       </span>
     </div>
     <p class="text-[#666666] max-w-2xl text-base leading-relaxed font-body">
@@ -110,18 +110,18 @@ tailwind.config = {
     <div class="bg-[#121214] ghost-border rounded-xl p-10 md:p-16 text-center relative overflow-hidden">
       <!-- Decorative background elements -->
       <div class="absolute inset-0 opacity-5">
-        <div class="absolute top-8 left-8 w-32 h-32 border border-[#800020] rounded-full"></div>
-        <div class="absolute bottom-8 right-8 w-48 h-48 border border-[#800020] rounded-full"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-[#800020] rounded-full"></div>
+        <div class="absolute top-8 left-8 w-32 h-32 border border-[#1E3A5F] rounded-full"></div>
+        <div class="absolute bottom-8 right-8 w-48 h-48 border border-[#1E3A5F] rounded-full"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-[#1E3A5F] rounded-full"></div>
       </div>
       <div class="relative z-10">
-        <span class="material-symbols-outlined text-[64px] text-[#800020] mb-6 block float-anim">science</span>
+        <span class="material-symbols-outlined text-[64px] text-[#1E3A5F] mb-6 block float-anim">science</span>
         <h2 class="font-display text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">How Deep Learning is Revolutionizing Gas Sensing</h2>
         <p class="text-[#666666] max-w-lg mx-auto text-base leading-relaxed mb-6">
           A deep dive into how convolutional neural networks and variational autoencoders are enabling real-time, multi-species gas detection from complex spectroscopic signals -- and why this matters for environmental monitoring and industrial safety.
         </p>
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0e0e10] ghost-border">
-          <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-[#1E3A5F] animate-pulse"></span>
           <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">Featured &middot; Jan 2025</span>
         </div>
       </div>
@@ -141,8 +141,8 @@ tailwind.config = {
       <div class="group">
         <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">AI</span>
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Gas Sensing</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">AI</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">Gas Sensing</span>
             <span class="font-mono text-[10px] text-[#444] tracking-wide">Jan 2025</span>
           </div>
           <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">How Deep Learning is Revolutionizing Gas Sensing</h4>
@@ -158,7 +158,7 @@ tailwind.config = {
       <div class="group">
         <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Machine Learning</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">Machine Learning</span>
             <span class="font-mono text-[10px] text-[#444] tracking-wide">Dec 2024</span>
           </div>
           <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">My Experience at NeurIPS 2024</h4>
@@ -174,8 +174,8 @@ tailwind.config = {
       <div class="group">
         <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Spectroscopy</span>
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">ML</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">Spectroscopy</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">ML</span>
             <span class="font-mono text-[10px] text-[#444] tracking-wide">Nov 2024</span>
           </div>
           <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Certifiably Robust ML for Spectroscopic Classification</h4>
@@ -191,8 +191,8 @@ tailwind.config = {
       <div class="group">
         <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">AI</span>
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Spectroscopy</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">AI</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">Spectroscopy</span>
             <span class="font-mono text-[10px] text-[#444] tracking-wide">Sep 2024</span>
           </div>
           <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Blind Source Separation: Detecting Gases Without Reference Spectra</h4>
@@ -208,8 +208,8 @@ tailwind.config = {
       <div class="group">
         <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Combustion</span>
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">AI</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">Combustion</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">AI</span>
             <span class="font-mono text-[10px] text-[#444] tracking-wide">Jul 2024</span>
           </div>
           <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">From Shock Tubes to Machine Learning: A Research Journey</h4>
@@ -225,8 +225,8 @@ tailwind.config = {
       <div class="group">
         <div class="bg-[#121214] ghost-border rounded-xl p-6 glow-hover transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Gas Sensing</span>
-            <span class="px-2 py-1 rounded-full bg-[#800020]/10 font-mono text-[9px] text-[#800020] uppercase tracking-widest">Environmental Monitoring</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">Gas Sensing</span>
+            <span class="px-2 py-1 rounded-full bg-[#1E3A5F]/10 font-mono text-[9px] text-[#1E3A5F] uppercase tracking-widest">Environmental Monitoring</span>
             <span class="font-mono text-[10px] text-[#444] tracking-wide">May 2024</span>
           </div>
           <h4 class="font-display text-xl font-bold text-white tracking-tight mb-3 leading-snug">Building a Compact Natural Gas Analyzer with a Single Laser</h4>
@@ -250,8 +250,8 @@ tailwind.config = {
       <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">&copy; 2026 Mohamed Sy. All Rights Reserved.</span>
     </div>
     <button id="system-status-btn" class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#121214] ghost-border">
-      <span class="w-1.5 h-1.5 rounded-full bg-[#800020] animate-pulse"></span>
-      <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">System Status: Operational</span>
+      <span class="w-1.5 h-1.5 rounded-full bg-[#1E3A5F] animate-pulse"></span>
+      <span class="font-mono text-[10px] text-[#1E3A5F] uppercase tracking-widest">System Status: Operational</span>
     </button>
   </div>
 </footer>
@@ -269,28 +269,28 @@ tailwind.config = {
     </button>
   </div>
   <nav class="flex flex-col flex-1 overflow-y-auto">
-    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./Mohamed_Sy_main">Home</a>
-    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./speaking.html">Speaking</a>
-    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./research.html">Research</a>
-    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./experience.html">Experience</a>
-    <a class="font-display text-3xl font-bold text-[#800020] py-5 border-b border-[rgba(73,61,64,0.15)]" href="./blog.html">Blog</a>
-    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./personal.html">Personal</a>
-    <a class="font-display text-3xl text-white hover:text-[#800020] transition-colors py-5" href="./gallery.html">Gallery</a>
+    <a class="font-display text-3xl text-white hover:text-[#1E3A5F] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./Mohamed_Sy_main">Home</a>
+    <a class="font-display text-3xl text-white hover:text-[#1E3A5F] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./speaking.html">Speaking</a>
+    <a class="font-display text-3xl text-white hover:text-[#1E3A5F] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./research.html">Research</a>
+    <a class="font-display text-3xl text-white hover:text-[#1E3A5F] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./experience.html">Experience</a>
+    <a class="font-display text-3xl font-bold text-[#1E3A5F] py-5 border-b border-[rgba(73,61,64,0.15)]" href="./blog.html">Blog</a>
+    <a class="font-display text-3xl text-white hover:text-[#1E3A5F] transition-colors py-5 border-b border-[rgba(73,61,64,0.15)]" href="./personal.html">Personal</a>
+    <a class="font-display text-3xl text-white hover:text-[#1E3A5F] transition-colors py-5" href="./gallery.html">Gallery</a>
   </nav>
   <div class="pt-6">
-    <a class="block bg-[#800020] text-white font-mono text-xs uppercase tracking-wider py-4 rounded-lg text-center hover:bg-[#5C0015] transition-all" href="./contact.html">Get in Touch</a>
+    <a class="block bg-[#1E3A5F] text-white font-mono text-xs uppercase tracking-wider py-4 rounded-lg text-center hover:bg-[#142844] transition-all" href="./contact.html">Get in Touch</a>
   </div>
 </div>
 
 <!-- ─── MOBILE BOTTOM NAV ─── -->
 <nav class="md:hidden fixed bottom-5 left-1/2 -translate-x-1/2 w-[90%] bg-[#121214]/90 backdrop-blur-md border border-[rgba(73,61,64,0.2)] rounded-full px-4 py-3 flex justify-around items-center z-50 shadow-2xl">
-  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./Mohamed_Sy_main">home</a>
-  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./speaking.html">mic_external_on</a>
-  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./research.html">history_edu</a>
-  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./experience.html">work</a>
-  <a class="material-symbols-outlined text-[#800020]" href="./blog.html" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24;">edit_note</a>
-  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./personal.html">person</a>
-  <a class="material-symbols-outlined text-[#666666] hover:text-[#800020] transition-colors" href="./gallery.html">photo_library</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#1E3A5F] transition-colors" href="./Mohamed_Sy_main">home</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#1E3A5F] transition-colors" href="./speaking.html">mic_external_on</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#1E3A5F] transition-colors" href="./research.html">history_edu</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#1E3A5F] transition-colors" href="./experience.html">work</a>
+  <a class="material-symbols-outlined text-[#1E3A5F]" href="./blog.html" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24;">edit_note</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#1E3A5F] transition-colors" href="./personal.html">person</a>
+  <a class="material-symbols-outlined text-[#666666] hover:text-[#1E3A5F] transition-colors" href="./gallery.html">photo_library</a>
 </nav>
 
 <!-- ─── SCRIPTS ─── -->
@@ -332,7 +332,7 @@ tailwind.config = {
   html.bw-mode [class*="border-[rgba(64"]   { border-color: rgba(0,0,0,0.08) !important; }
   html.bw-mode [class*="border-[rgba(73"]   { border-color: rgba(0,0,0,0.08) !important; }
   html.bw-mode [class*="border-white"]       { border-color: rgba(0,0,0,0.08) !important; }
-  html.bw-mode [class*="border-[#800020]"]  { border-color: #5C0015 !important; }
+  html.bw-mode [class*="border-[#1E3A5F]"]  { border-color: #142844 !important; }
 
   /* TEXT */
   html.bw-mode *                            { color: #111111 !important; }
@@ -342,7 +342,7 @@ tailwind.config = {
   html.bw-mode [class*="text-[#444]"]       { color: #555555 !important; }
 
   /* Accent text */
-  html.bw-mode [class*="text-[#800020]"]    { color: #5C0015 !important; }
+  html.bw-mode [class*="text-[#1E3A5F]"]    { color: #142844 !important; }
 
   /* BW button active highlight */
   html.bw-mode #bw-toggle                   { border-color: rgba(0,0,0,0.35) !important; font-weight: 700; }
@@ -353,10 +353,10 @@ tailwind.config = {
   html.bw-mode       .logo-light            { display: block !important; }
 
   /* Keep white text on accent backgrounds */
-  html.bw-mode [class*="bg-[#800020]"],
-  html.bw-mode [class*="bg-[#800020]"] *,
-  html.bw-mode [class*="bg-[#5C0015]"],
-  html.bw-mode [class*="bg-[#5C0015]"] *   { color: #ffffff !important; }
+  html.bw-mode [class*="bg-[#1E3A5F]"],
+  html.bw-mode [class*="bg-[#1E3A5F]"] *,
+  html.bw-mode [class*="bg-[#142844]"],
+  html.bw-mode [class*="bg-[#142844]"] *   { color: #ffffff !important; }
 </style>
 
 </body>
