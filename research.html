@@ -126,7 +126,7 @@ tailwind.config = {
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
     <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6">
       <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest block mb-2">Status</span>
-      <span class="font-display text-xl font-bold text-[#800020]">Parsing</span>
+      <span class="font-display text-xl font-bold text-[#800020]">Active</span>
     </div>
     <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-6">
       <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest block mb-2">Papers</span>
@@ -189,22 +189,26 @@ tailwind.config = {
 
   <!-- Publications -->
   <div>
-    <div class="flex items-center gap-3 mb-4">
-      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">// publications</span>
+    <div class="flex items-center justify-between mb-4">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">// first-author publications</span>
+      <a href="https://scholar.google.com/citations?user=OepUrlsAAAAJ&hl=en&oi=sra" target="_blank" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0e0e10] ghost-border hover:border-[#800020] transition-colors">
+        <span class="material-symbols-outlined text-[15px] text-[#800020]">school</span>
+        <span class="font-mono text-[10px] text-[#800020] uppercase tracking-widest">Google Scholar</span>
+      </a>
     </div>
     <div class="space-y-3">
       <!-- Paper 1 -->
       <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
         <div class="flex-shrink-0">
-          <span class="font-mono text-[13px] text-[#800020] font-bold">2025</span>
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
         </div>
         <div class="flex-1">
-          <h4 class="font-display text-lg font-bold text-white mb-1">Multilingual Sentiment Analysis Using Transformer Architectures</h4>
-          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">A comparative study of fine-tuned transformer models for sentiment classification across Arabic, French, and English social media datasets.</p>
-          <div class="flex items-center gap-3">
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">NLP</span>
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Transformers</span>
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">18 citations</span>
+          <h4 class="font-display text-lg font-bold text-white mb-1">Laser-based speciation of isoprene thermal decomposition behind reflected shock waves</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, et al. &mdash; Proceedings of the Combustion Institute, 40(1-4), 105460.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Combustion</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Shock Tube</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Spectroscopy</span>
           </div>
         </div>
         <div class="flex-shrink-0">
@@ -215,15 +219,15 @@ tailwind.config = {
       <!-- Paper 2 -->
       <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
         <div class="flex-shrink-0">
-          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2023</span>
         </div>
         <div class="flex-1">
-          <h4 class="font-display text-lg font-bold text-white mb-1">Predictive Modeling for Urban Resource Allocation</h4>
-          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Leveraging ensemble methods and geospatial data to optimize public resource distribution in growing metropolitan areas.</p>
-          <div class="flex items-center gap-3">
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Data Science</span>
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Geospatial</span>
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">12 citations</span>
+          <h4 class="font-display text-lg font-bold text-white mb-1">Multi-speciation in shock tube experiments using a single laser and deep neural networks</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, Mhanna Mhanna, and Aamir Farooq &mdash; Combustion and Flame, 255, 112929.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Deep Learning</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Combustion</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Shock Tube</span>
           </div>
         </div>
         <div class="flex-shrink-0">
@@ -237,12 +241,12 @@ tailwind.config = {
           <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
         </div>
         <div class="flex-1">
-          <h4 class="font-display text-lg font-bold text-white mb-1">Scalable Feature Stores for Real-Time ML Inference</h4>
-          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Architectural patterns for building low-latency feature serving systems that support online and batch prediction workloads at scale.</p>
-          <div class="flex items-center gap-3">
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">MLOps</span>
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Systems</span>
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">9 citations</span>
+          <h4 class="font-display text-lg font-bold text-white mb-1">VOC-certifire: Certifiably robust one-shot spectroscopic gases classification via randomized smoothing</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, Emad Al Ibrahim, Aamir Farooq &mdash; ACS Omega.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">AI</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Certified Robustness</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">VOC</span>
           </div>
         </div>
         <div class="flex-shrink-0">
@@ -253,19 +257,212 @@ tailwind.config = {
       <!-- Paper 4 -->
       <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
         <div class="flex-shrink-0">
-          <span class="font-mono text-[13px] text-[#800020] font-bold">2023</span>
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
         </div>
         <div class="flex-1">
-          <h4 class="font-display text-lg font-bold text-white mb-1">Domain-Adaptive Text Classification for Low-Resource Languages</h4>
-          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Transfer learning strategies for building accurate text classifiers when labeled data is scarce, with applications to West African language corpora.</p>
-          <div class="flex items-center gap-3">
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">NLP</span>
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Transfer Learning</span>
-            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">6 citations</span>
+          <h4 class="font-display text-lg font-bold text-white mb-1">Unsupervised Source Separation: Quantifying hydrocarbons without their reference spectra using VAEs</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, Emad Al Ibrahim, Ali Elkhazraji, Aamir Farooq &mdash; Submitted to ICLS.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">VAE</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Unsupervised Learning</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Hydrocarbons</span>
           </div>
         </div>
         <div class="flex-shrink-0">
           <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Paper 5 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Multi-component gas sensing via spectral feature engineering</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, Sarah Aamir, Aamir Farooq &mdash; Sensors and Actuators B: Chemical.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Gas Sensing</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Feature Engineering</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Paper 6 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">AI-aided interference removal technique for enhanced GHGs emission detection</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, Mohammed Sait, Aamir Farooq &mdash; In review, IEEE Sensors.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">AI</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">GHG Emissions</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">In Review</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Paper 7 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Reference-Free Multi-Species Gas Detection via Unsupervised Learning</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, et al. &mdash; IEEE Sensors, 2024.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Unsupervised Learning</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Gas Detection</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Paper 8 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">ML-enhanced compact, sensitive and selective C1-C5 natural gas analyzer using single laser and a multipass cell</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, et al. &mdash; LACSEA.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Machine Learning</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Natural Gas</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Multipass Cell</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Paper 9 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">MSC-certifire: Mixture spectra classifier, a certifiably robust one-shot spectroscopic gases mixture detection via randomized smoothing</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Sy, Mohamed, Emad Al Ibrahim, Aamir Farooq &mdash; ACS Omega.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">AI</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Certified Robustness</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Gas Mixtures</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+
+      <!-- Papers 10-13 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2023&ndash;24</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Additional First-Author Publications</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">4 additional first-author papers on blind source separation for spectroscopy, H&#8322;S/CO&#8322; laser-based analyzers, natural gas composition analyzers, and chemical kinetics modeling.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Blind Source Separation</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Gas Analyzers</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Kinetics</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">arrow_outward</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Co-Authored Publications -->
+  <div class="mt-8">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">// co-authored publications [14&ndash;23]</span>
+    </div>
+    <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 cursor-default">
+      <h4 class="font-display text-lg font-bold text-white mb-2">10 Co-Authored Papers</h4>
+      <p class="text-[#666666] text-[14px] leading-relaxed mb-3">Contributions to collaborative research spanning BTEX sensing, fugitive methane detection, mid-infrared diagnostics for combustion and industrial applications, and shock tube kinetics studies.</p>
+      <div class="flex flex-wrap items-center gap-3">
+        <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">BTEX Sensing</span>
+        <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Methane Detection</span>
+        <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Mid-IR Diagnostics</span>
+        <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Shock Tube</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Patents -->
+  <div class="mt-8">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest">// patents</span>
+    </div>
+    <div class="space-y-3">
+      <!-- Patent 1 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2024</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Method and system for water cut sensing in an oil-water flow</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">US Patent App. 18/535,964 &mdash; June 26, 2024</p>
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">US Patent</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Oil &amp; Gas</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#800020]">verified</span>
+        </div>
+      </div>
+
+      <!-- Patent 5 -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">2023</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">Laser-based selective BTEX sensing with deep neural network</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">US Patent App. 17/901,068 &mdash; March 02, 2023</p>
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">US Patent</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">BTEX</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Deep Learning</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#800020]">verified</span>
+        </div>
+      </div>
+
+      <!-- Patents in Preparation -->
+      <div class="bg-[#121214] rounded-xl ghost-border glow-hover transition-all duration-300 p-7 flex flex-col md:flex-row md:items-start gap-4 cursor-default">
+        <div class="flex-shrink-0">
+          <span class="font-mono text-[13px] text-[#800020] font-bold">In Prep</span>
+        </div>
+        <div class="flex-1">
+          <h4 class="font-display text-lg font-bold text-white mb-1">4 Additional U.S. Patents with Aramco (In Preparation)</h4>
+          <p class="text-[#666666] text-[14px] leading-relaxed mb-2">Unknown spectral interference removal technique &bull; Auto-Ranging Dual-Path Gas Sensor for continuous on-site monitoring of alkanes, CO&#8322;, and H&#8322;S &bull; ML-enhanced algorithms for continuous on-site monitoring of alkanes, CO&#8322;, and H&#8322;S &bull; Flare emission monitoring through LAS</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">U.S. Patent</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">Aramco</span>
+            <span class="font-mono text-[10px] text-[#666666] uppercase tracking-widest px-2 py-1 rounded bg-[#0e0e10] ghost-border">In Preparation</span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="material-symbols-outlined text-[#666666]">pending</span>
         </div>
       </div>
     </div>
